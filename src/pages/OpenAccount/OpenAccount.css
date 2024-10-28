@@ -1,0 +1,178 @@
+.open-account-page {
+  max-width: 600px;                /* Maximum width for larger screens */
+  margin: 50px auto;               /* Center the container with margin */
+  padding: 20px;                   /* Padding inside the container */
+  background-color: #f9f9f9;       /* Background color */
+  border-radius: 8px;              /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+h2 {
+  text-align: center;               /* Center the heading */
+  color: #333;                      /* Dark color for heading */
+  margin-top: 10px;                /* Margin above heading */
+}
+
+p {
+  text-align: center;               /* Center paragraph text */
+  color: #666;                      /* Lighter color for text */
+}
+
+.steps-progress {
+  display: flex;                    /* Flexbox layout for steps */
+  justify-content: space-between;   /* Space between steps */
+  margin-bottom: 50px;             /* Bottom margin */
+}
+
+.step {
+  margin-top: 50px;                /* Top margin for steps */
+  padding: 10px;                   /* Padding inside steps */
+  flex: 1;                          /* Allow steps to grow */
+  text-align: center;               /* Center text in steps */
+  border-bottom: 2px solid #ccc;   /* Bottom border */
+  color: #666;                      /* Color for inactive steps */
+  cursor: pointer;                  /* Pointer cursor for steps */
+}
+
+.step.active {
+  border-bottom: 2px solid #000000; /* Border for active step */
+  color: #000000;                   /* Color for active step */
+}
+
+.account-form {
+  display: flex;                    /* Flexbox layout for form */
+  flex-direction: column;           /* Column direction */
+  gap: 15px;                       /* Gap between form elements */
+}
+
+.form-group {
+  display: flex;                    /* Flexbox layout for groups */
+  flex-direction: column;           /* Column direction */
+  gap: 5px;                        /* Gap between label and input */
+  margin-top: 10px;                /* Top margin */
+  margin-bottom: 10px;             /* Bottom margin */
+}
+
+.form-group label {
+  margin-bottom: 5px;              /* Bottom margin for labels */
+  font-weight: bold;               /* Bold labels */
+  color: #444;                     /* Dark color for labels */
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;                   /* Padding inside inputs */
+  border: 1px solid #ccc;          /* Border for inputs */
+  border-radius: 4px;              /* Rounded corners */
+}
+
+.error {
+  color: red;                      /* Color for error messages */
+  font-size: 0.9rem;              /* Font size for error messages */
+}
+
+.form-navigation {
+  display: flex;                    /* Flexbox layout for navigation */
+  justify-content: space-between;   /* Space between buttons */
+}
+
+.nav-btn,
+.submit-btn {
+  padding: 10px 20px;              /* Padding inside buttons */
+  background-color: #000000;       /* Background color for buttons */
+  color: white;                    /* Text color for buttons */
+  border: none;                    /* No border */
+  border-radius: 4px;              /* Rounded corners */
+  cursor: pointer;                  /* Pointer cursor for buttons */
+  font-size: 1rem;                 /* Font size for buttons */
+}
+
+.nav-btn:hover,
+.submit-btn:hover {
+  background-color: #2d2d31fe;     /* Darker background on hover */
+}
+
+.review-page p {
+  line-height: 2.8;                /* Line height for review text */
+  text-align: left;                /* Left align text */
+}
+
+.finish-section {
+  text-align: center;              /* Center text in finish section */
+}
+
+.finish-section p {
+  margin-bottom: 12.5px;           /* Bottom margin for finish text */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 544px) {
+  .open-account-page {
+      width: 90%;                  /* Container width 90% for small screens */
+      padding: 15px;              /* Adjust padding for better fit */
+      margin: 20px auto;          /* Adjust margin for better fit */
+  }
+
+  h2 {
+      font-size: 18px;            /* Adjust title size */
+  }
+
+  p {
+      font-size: 14px;            /* Adjust paragraph size */
+  }
+
+  .steps-progress {
+      flex-direction: column;      /* Stack steps vertically */
+  }
+
+  .step {
+      margin-top: 10px;           /* Adjust margin for steps */
+      padding: 5px;               /* Adjust padding for steps */
+  }
+
+  .form-group label,
+  .form-group input,
+  .nav-btn,
+  .submit-btn {
+      font-size: 12px;            /* Adjust font sizes for small screens */
+  }
+
+  .links {
+      font-size: 12px;            /* Adjust link size */
+  }
+}
+
+/* Media query for screens 420px and below */
+@media (max-width: 420px) {
+  .open-account-page {
+      width: 90%;                  /* Keep the container width 90% */
+      padding: 10px;               /* Further reduce padding */
+  }
+
+  h2 {
+      font-size: 16px;             /* Smaller title size */
+  }
+
+  p {
+      font-size: 12px;             /* Smaller paragraph size */
+  }
+
+  .steps-progress {
+      margin-bottom: 30px;         /* Adjust margin for steps */
+  }
+
+  .step {
+      margin-top: 5px;             /* Further reduce margin for steps */
+  }
+
+  .form-group label,
+  .form-group input,
+  .nav-btn,
+  .submit-btn {
+      font-size: 10px;             /* Further reduce font sizes */
+  }
+
+  .links {
+      font-size: 10px;             /* Further reduce link size */
+  }
+}

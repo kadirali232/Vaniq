@@ -1,0 +1,29 @@
+.as-seen-on {
+  text-align: center;
+  padding: 40px 20px; /* Padding for spacing around the section */
+  background-color: #ffffff;
+}
+
+.as-seen-on h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.outlets-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px; /* Space between the logos */
+}
+
+.outlet {
+  display: inline-block;
+  padding: 10px;
+}
+
+.outlet-logo {
+  max-height: 60px;
+  max-width: 150px;
+  object-fit: contain;
+}

@@ -1,0 +1,120 @@
+
+  .plans-container {
+    display: flex;
+    flex-direction: column; /* Change flex direction to column */
+    align-items: center; /* Center items horizontally */
+    gap: 50px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.plan-cards-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Rest of your existing styles remain the same */
+
+  .plan-card {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .plan-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .plan-price {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 30px;
+  }
+  
+  .plan-description {
+    margin-top: 15px;
+    color: #333;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  
+  .plan-features p {
+    margin-left: 20px;
+    text-align: left;
+    color: #333;
+  }
+  
+  .bullet-point {
+    margin-right: 8px;
+    font-size: 1.1em;
+  }
+  
+  .plan-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1d1e21;
+    color: rgb(230, 230, 230);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .plan-btn:hover {
+    background-color: #474748;
+  }
+  
+  /* Style for the images */
+  .plan-image {
+    margin-top: 2px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .additional-benefits {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+  }
+  
+  .additional-benefits h3 {
+    font-size: 1.5rem;
+    color: #2a2a72;
+    margin-bottom: 10px;
+
+  }
+  
+  .additional-benefits ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .additional-benefits ul li {
+    margin-bottom: 10px;
+  }
+  
+  .vaniqmobile-card {
+    display: flex;
+    justify-content: center; /* Centers both images horizontally */
+    align-items: center; /* Aligns images vertically */
+    gap: 50px; /* Adds space between the two images */
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .reviewplan-img, .reviewplan-img1 {
+    width: 40%; /* Each image will take up 40% of the available space */
+    max-width: 300px; /* Optional: Limit the max width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+  }
+  

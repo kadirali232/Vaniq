@@ -1,0 +1,112 @@
+.footer {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 50px 10px; /* Reduced padding to remove excess space */
+    font-size: 14px;
+    border-top: 1px solid #e1e1e1;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+    min-width: 200px;
+}
+
+.footer-section h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 15px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: left;
+    padding: 10px 0;
+    border-top: 1px solid #e1e1e1;
+}
+
+.footer-bottom p {
+    margin-top: 10px;
+    padding: 0;
+    margin-bottom: 0; /* Remove any bottom margin */
+}
+
+.footer-legal {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.footer-legal-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-legal-links li {
+    display: inline;
+    margin: 0 8px;
+}
+
+.footer-legal-links li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer-legal-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+        margin-right: 0;
+        text-align: left;
+    }
+
+    .footer-legal-links li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Add this to make the copyright text stick to the bottom */
+.footer-bottom {
+    position: absolute;
+    bottom: 5%;
+    padding: 5px 5px;
+    width: 100%;
+}

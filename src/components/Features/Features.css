@@ -1,0 +1,227 @@
+/* General Feature Section Styles */
+.feature-section {
+  display: flex;
+  flex-direction: row; /* Default: image on the left, text on the right */
+  align-items: center; /* Align items vertically */
+  padding: 4rem 3rem; /* Padding to separate each section */
+  background-color: #f2f2f2; /* Background color for the sections */
+  margin-bottom: 2rem; /* Space between sections */
+}
+
+.feature-section p {
+  text-align: left;
+}
+
+/* Background Colors for Each Section */
+.lounge-section {
+  background-color: #eeeaea; /* Light gray */
+}
+
+.restaurant-section {
+  background-color: #ffffff; /* Light green */
+}
+
+.travel-section {
+  background-color: #eeeaea; /* Light blue */
+}
+
+.service-section {
+  background-color: #ffffff; /* Light gray for 24/7 service */
+}
+
+/* Feature Image */
+.feature-section .img1 {
+  width: 40%; /* Default image size for all sections */
+  height: auto;
+  margin-right: 7rem; /* Space between image and text */
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+/* Align text for 24/7 Service */
+.iphone {
+  height: auto;
+  margin-right: 10rem;
+  margin-left: 10rem; /* Space between image and text */
+  border-radius: 10px;
+}
+
+/* Feature Content */
+.feature-content {
+  text-align: left; /* Align text to the left */
+  max-width: 700px; /* Restrict the width of the text content */
+}
+
+/* Feature Title */
+.feature-content h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333; /* Darker color for better readability */
+}
+
+/* Feature Description */
+.feature-content p {
+  font-size: 1.2rem;
+  color: #555; /* Lighter color for the text */
+}
+
+.learn-btn {
+  margin-top: 20px;
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.learn-btn:hover {
+  background-color: #312f2f;
+}
+
+/* Reviews Section */
+.reviews-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.reviews-banner {
+  margin-bottom: 20px;
+}
+
+.reviews-banner h3 {
+  color: black;
+}
+
+.reviews-banner h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.reviews-banner p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.reviews-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.review {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  text-align: left;
+}
+
+.review p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.review h4 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .feature-section {
+    flex-direction: column; /* Stack image and text on small screens */
+    padding: 2rem 1rem; /* Reduce padding */
+  }
+
+  .feature-section .img1, .iphone {
+    width: 80%; /* Make images full width on small screens */
+    margin: 0 auto 1.5rem; /* Center images and add bottom margin */
+  }
+
+  .feature-content {
+    text-align: center; /* Center text on small screens */
+    padding: 0 1rem; /* Extra padding for content readability */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .feature-content h3 {
+    font-size: 1.8rem; /* Adjust title size */
+  }
+
+  .feature-content p {
+    font-size: 1rem; /* Adjust paragraph size */
+  }
+
+  .learn-btn {
+    font-size: 0.9rem; /* Smaller button text */
+    padding: 5px 8px; /* Adjust padding */
+  }
+
+  .reviews-content {
+    flex-direction: column; /* Stack reviews vertically */
+    align-items: center;
+  }
+
+  .review {
+    width: 80%; /* Increase width for reviews on small screens */
+    text-align: center;
+  }
+}
+
+/* Extra adjustments for very small screens (e.g., down to 480px) */
+@media (max-width: 480px) {
+  .feature-section {
+    padding: 1.5rem 1rem; /* Slightly reduce padding */
+  }
+
+  .feature-content h3 {
+    font-size: 1.5rem; /* Smaller font for titles */
+    margin-bottom: 0.5rem;
+  }
+
+  .feature-content p {
+    font-size: 0.9rem; /* Reduce text size for readability */
+    line-height: 1.4; /* Adjust line height */
+  }
+
+  .learn-btn {
+    font-size: 0.8rem; /* Adjust button size */
+    padding: 4px 6px; /* Adjust padding */
+  }
+
+  .review {
+    width: 100%; /* Make reviews full width */
+    padding: 15px; /* Reduce padding */
+  }
+}
+
+/* Ultra-small screens (320px and below) */
+@media (max-width: 320px) {
+  .feature-section {
+    padding: 1rem 0.5rem; /* Further reduce padding for small screens */
+  }
+
+  .feature-content h3 {
+    font-size: 1.3rem; /* Adjust title size further */
+  }
+
+  .feature-content p {
+    font-size: 0.8rem; /* Further reduce text size */
+    padding: 0 0.5rem; /* Narrow padding for content */
+  }
+
+  .learn-btn {
+    font-size: 0.7rem; /* Adjust button size */
+    padding: 4px 6px; /* Adjust padding */
+  }
+
+  .review {
+    width: 100%; /* Full width for reviews on very small screens */
+    padding: 10px; /* Adjust padding for very small screens */
+    text-align: center;
+  }
+}

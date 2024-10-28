@@ -1,0 +1,159 @@
+/* Centering the container and adjusting layout */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #ffffff;
+}
+
+/* Flexbox layout for login form and image side by side */
+.loginContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;              /* Adjust width as needed */
+  max-width: 1000px;      /* Maximum width to avoid stretching */
+}
+
+/* Styling the login container */
+.loginContainer {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 450px;            /* Default width */
+  text-align: center;
+  margin-right: 20px;     /* Add some space between form and image */
+}
+
+/* Title styling */
+.title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Form styling */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for input groups (labels and inputs) */
+.inputGroup {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 14px;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Checkbox styling */
+.checkboxGroup {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.checkboxGroup input {
+  margin-right: 5px;
+}
+
+.checkboxLabel {
+  color: #333;
+  font-size: 14px;
+}
+
+/* Button styling */
+.button {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #373737;
+}
+
+/* Links styling */
+.links {
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.link {
+  color: #000000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Styling the image next to the login container */
+.imageContainer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.loginPic {
+  max-width: 700px;         /* Control max width of the image */
+  width: 100%;              /* Make it responsive */
+  height: auto;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .loginContent {
+      flex-direction: column; /* Stack form and image vertically */
+  }
+
+  .imageContainer {
+      display: none; /* Hide image container on small screens */
+  }
+}
+
+/* Media query for screens 420px and below */
+@media (max-width: 544px) {
+  .loginContainer {
+      width: 90%;           /* Make the container width 90% of the screen */
+      padding: 15px;       /* Adjust padding for better fit */
+      margin-right: 0;     /* Remove margin-right for small screens */
+  }
+
+  .title {
+      font-size: 18px;     /* Adjust title size */
+  }
+
+  .inputGroup label,
+  .inputGroup input,
+  .button {
+      font-size: 12px;     /* Adjust font sizes for small screens */
+  }
+
+  .links {
+      font-size: 12px;     /* Adjust link size */
+  }
+}
+
+/* Media query for ultra-small screens (320px and below) */

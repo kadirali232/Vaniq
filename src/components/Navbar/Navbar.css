@@ -1,0 +1,112 @@
+/* General Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between logo and links */
+  align-items: center; /* Vertically align items in the center */
+  background-color: #000000; /* Background color for the navbar */
+  padding: 1rem 2rem; /* Adjust padding for navbar size */
+  box-shadow: 0 2px 4px rgba(53, 52, 52, 0.1); /* Subtle shadow */
+  height: 80px; /* Slightly larger navbar */
+}
+
+
+/* Navbar Logo */
+.navbar-logo {
+  width: max(16vw, 150px); 
+}
+
+.navbar-links li a {
+  color: white; /* Default color for links */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.navbar-links li a:hover {
+  color: rgba(169, 169, 169, 0.855); /* Change color to black on hover */
+}
+
+/* Styling the Navigation Links */
+.navbar-links {
+  list-style-type: none; /* Remove default list styles */
+  display: flex; /* Display flex for horizontal alignment */
+  gap: 2rem; /* Space between links */
+  align-items: center;
+  padding: 0;
+}
+
+/* Hide navbar links by default for mobile */
+.navbar-links {
+  display: none; /* Hide the links by default */
+}
+
+/* Show navbar links when open */
+.navbar-links.open {
+  display: flex; /* Display links when open */
+  flex-direction: column; /* Align links vertically */
+  position: absolute; /* Position them absolutely */
+  top: 80px; /* Place below the navbar */
+  right: 0; /* Align to the right */
+  background-color: #000000; /* Same background color as navbar */
+  width: 100%; /* Full width */
+  padding: 1rem 0; /* Padding for spacing */
+  z-index: 10; /* Ensure it appears above other content */
+}
+
+/* Hamburger Menu Icon */
+.hamburger {
+  display: none; /* Hidden on larger screens */
+  flex-direction: column;
+  gap: 0.3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 20; /* Ensure it appears above other elements */
+}
+
+/* Hamburger Bar Styling */
+.hamburger-bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease; /* Smooth transition for changes */
+}
+
+/* Transform to X when open */
+.hamburger.open .hamburger-bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg); /* Move the top bar down and rotate */
+}
+
+.hamburger.open .hamburger-bar:nth-child(2) {
+  opacity: 0; /* Hide the middle bar */
+}
+
+.hamburger.open .hamburger-bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg); /* Move the bottom bar up and rotate */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1.5rem; /* Adjust padding for smaller screens */
+  }
+
+  .navbar-links {
+    display: none; /* Hide links by default on small screens */
+  }
+
+  /* Display hamburger menu on small screens */
+  .hamburger {
+    display: flex; /* Show the hamburger button */
+  }
+}
+
+/* Show navbar links when on larger screens */
+@media (min-width: 769px) {
+  .navbar-links {
+    display: flex; /* Show links normally on larger screens */
+  }
+
+  .hamburger {
+    display: none; /* Hide the hamburger button on larger screens */
+  }
+}
