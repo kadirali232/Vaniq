@@ -27,9 +27,9 @@ const Blog = () => {
         image: image33,
       },
       {
-        title: 'Vaniq Half Marathon: Running for Children in Need',
+        title: 'Vaniq Marathon: Running for Children in Need',
         date: 'June 10, 2024',
-        description: 'Exclusively for Vaniq Black users, join us for the Vaniq half marathon race and support the Children in Need charity! This is a fantastic opportunity to run for a great cause while making a difference in the lives of children.',
+        description: 'Exclusively for Vaniq Black users, join us for the Vaniq marathon race and support the Children in Need charity! This is a fantastic opportunity to run for a great cause while making a difference in the lives of children.',
         image: image44,
       },
     ];
