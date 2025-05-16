@@ -19,7 +19,7 @@ const LogIn = () => {
     <div className="container">
       <div className="loginContent">
         <div className="loginContainer">
-          <h2 className="title">Log In to My Account</h2>
+          <h2 className="title">Log In to my Vaniq Account? </h2>
           <form onSubmit={handleSubmit} className="form">
             <div className="inputGroup">
               <label htmlFor="userID">User ID</label>
