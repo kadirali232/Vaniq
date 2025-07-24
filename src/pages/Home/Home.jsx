@@ -12,7 +12,7 @@ const Home = () => {
       <header className="hero-section home-content">
         <h1>Elevate Your Everyday Banking</h1>
         <p className='slogan'>
-          We believe that banking should enhance your.
+          We believe that banking should enhance your Life.
         </p>
         <Link to= "/OpenAccount">
         <button className="cta-button">Open Account </button>
